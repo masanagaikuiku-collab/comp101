@@ -9,6 +9,7 @@
    <p>How many pizzas do you want?</p>
   <input type="number"id="quantity">
   
+  <p id="result"style="text-align:center;"></p>
   
   <p>How much each pizza cost?</p>
   <input type="number"id="price">
@@ -17,8 +18,7 @@
     <button onclick="calculate()">Calculate Total</button>
   </p>
 
-  <p id="result"></p>
-
+  
   <script>
     function calculate() {
       let price = Number(document.getElementById("price").value);
@@ -26,8 +26,8 @@
 
       let total = price * quantity;
 
-      document.getElementById("result").innerHTML =
-        "The Total cost is: $" + total;
+document.getElementById("result").innerHTML =
+        "The Total cost is: $" + total; 
     }
 </script>
 </body>
